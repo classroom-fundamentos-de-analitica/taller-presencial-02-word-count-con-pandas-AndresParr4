@@ -42,6 +42,7 @@ def count_words(dataframe):
             'count': sum
         }
     )
+    conteo.set_index('word', inplace=True)  # Establecer 'word' como índice
     return conteo
 
 def save_output(dataframe, output_filename):
